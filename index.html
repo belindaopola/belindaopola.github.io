@@ -1,268 +1,174 @@
-<!DOCTYPE HTML>
-<!--
-	Miniport by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Belinda's Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belinda Akinyi Opola | Data Researcher & AI Specialist</title>
+    <meta name="description" content="Portfolio of Belinda Akinyi Opola - MSc AI Student and Research Professional.">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
-		<!-- Nav -->
-			<nav id="nav">
-				<ul class="container">
-					<li><a href="#top">Bio</a></li>
-					<li><a href="#alxportfolio">Portfolio</a></li>
-					<li><a href="#pitch">Elevator Pitch</a></li>
-					<li><a href="#work">Data Analysis</a></li>
-					<li><a href="#portfolio">Machine Learning</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
+    <style>
+        /* CORE STYLES - Clean, Academic, Modern */
+        :root {
+            --primary: #0a2540; /* Academic Navy Blue */
+            --accent: #00d4ff;  /* Tech Blue */
+            --bg: #f8f9fa;
+            --text: #333;
+            --white: #ffffff;
+        }
 
-		<!-- Home -->
-			<article id="top" class="wrapper style1">
-				<div class="container">
-					<div class="row">
-						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="images/pic00.jpg" alt="" /></span>
-						</div>
-						<div class="col-8 col-7-large col-12-medium">
-							<header>
-								<h1>Hi. I'm <strong>Belinda Opola</strong>.</h1>
-							</header>
-							<p>A Data Analyst with technical expertise and a passion for driving data-driven insights, proficient in data analytics and visualization tools including PowerBI, Excel, SQL and Tableau. Knowledgeable in programming languages including R, Python and leveraging them to extract actionable information from complex datasets with experience with cloud platforms like AWS, Azure and IBM Cloud.</p>
-							<a href="#work" class="button large scrolly">Get insights from your data with Python, PowerBI, Excel and Tableau</a>
-						</div>
-					</div>
-				</div>
-			</article>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; line-height: 1.6; color: var(--text); background-color: var(--bg); }
+        
+        /* TYPOGRAPHY */
+        h1, h2, h3 { font-family: 'Playfair Display', serif; color: var(--primary); margin-bottom: 1rem; }
+        h1 { font-size: 2.5rem; }
+        h2 { font-size: 2rem; border-bottom: 2px solid var(--accent); display: inline-block; padding-bottom: 5px; margin-bottom: 30px; }
+        a { text-decoration: none; color: var(--primary); transition: 0.3s; }
+        a:hover { color: var(--accent); }
 
+        /* LAYOUT */
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        section { padding: 60px 0; }
+        
+        /* HEADER / HERO */
+        header { background: var(--primary); color: var(--white); padding: 80px 0; text-align: center; }
+        header h1 { color: var(--white); }
+        header p { font-size: 1.2rem; opacity: 0.9; max-width: 600px; margin: 0 auto 20px auto; }
+        .btn { display: inline-block; background: var(--accent); color: var(--primary); padding: 10px 25px; border-radius: 5px; font-weight: bold; margin-top: 10px; }
+        .btn:hover { background: var(--white); }
+        .social-icons a { color: var(--white); font-size: 1.5rem; margin: 0 10px; }
+        
+        /* ABOUT SECTION */
+        .about-grid { display: grid; grid-template-columns: 1fr; gap: 30px; }
+        @media(min-width: 768px) { .about-grid { grid-template-columns: 2fr 1fr; } }
+        .card { background: var(--white); padding: 25px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
 
-		<!-- Alx Portfolio -->
-			<article id="alxportfolio" class="wrapper style2">
-				<div class="container">
-					<header>
-						<h2>Portfolio Projects</h2>
-						<p>This is the start of my bigger than life ideas at ALX.</p>
-					</header>
-					<div class="row aln-center">
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="icon featured fa-comments"></span>
-								<h3>Team's Slide Presentation </h3>
-								<h3><a href="https://drive.google.com/file/d/1lyPIAI5D5POr3ETbWFiuSdvKkzhi6WrH/view?usp=sharing">Click to view presentation</a></h3>
-								<p>Month 2 Team's Project Presentation; Traffic congestion in urban centres.</p>
-							</section>
-						</div>
+        /* SKILLS TAGS */
+        .skill-tag { display: inline-block; background: #e9ecef; color: var(--primary); padding: 5px 12px; border-radius: 20px; font-size: 0.9rem; margin: 5px 2px; }
 
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="icon featured fa-comments"></span>
-								<h3>Team's Video Presentation </h3>
-								<h3><a href="https://youtu.be/AcCtJEjTx6s">Click to watch presentation</a></h3>
-								<p>Watch Month 2 Team's pitch on YouTube, brought to you by Urban Mobility Alliance.</p>
-							</section>
-						</div>
-					</div>
-					<footer>
-						<p>More about Belinda?</p>
-						<a href="#pitch" class="button large scrolly">Checkout my elevator pitch</a>
-					</footer>
-				</div>
-			</article>
+        /* PROJECTS GRID */
+        .projects-grid { display: grid; grid-template-columns: 1fr; gap: 30px; }
+        @media(min-width: 768px) { .projects-grid { grid-template-columns: repeat(3, 1fr); } }
+        .project-card { background: var(--white); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .project-card:hover { transform: translateY(-5px); }
+        .project-content { padding: 20px; }
+        .project-tech { font-size: 0.85rem; color: #666; margin-bottom: 10px; font-weight: bold; }
+        
+        /* FOOTER */
+        footer { text-align: center; padding: 40px 0; background: var(--primary); color: var(--white); font-size: 0.9rem; }
+    </style>
+</head>
+<body>
 
-		<!-- Elevator Pitch -->
-			<article id="pitch" class="wrapper style2">
-				<div class="container">
-					<header>
-						<h2>Elevator Pitch</h2>
-						<p>Meet the Project Manager by day, Data Analyst by night </p>
-					</header>
-					<div class="row aln-center">
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-							<video width="320" height="240" controls>
-                                                           <source src="images/belinda_ep.webm" type=video/mp4>
-                                                        </video>
-							<a href="#work" class="button large scrolly">Projects</a>
-							</section>
-						</div>
-					</div>
-				</div>
-			</article>
+    <header>
+        <div class="container">
+            <h1>Belinda Akinyi Opola</h1>
+            <p>Data Researcher | AI Specialist | MSc Student</p>
+            <p>Leveraging Machine Learning and Data Analytics to solve societal challenges and optimize operational logistics.</p>
+            <div class="social-icons">
+                <a href="mailto:belindaopola@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/belindaopola" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <a href="#projects" class="btn">View Research Projects</a>
+        </div>
+    </header>
 
+    <section id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="card">
+                    <h2>About Me</h2>
+                    <p>I am a <strong>Data Researcher and AI Specialist</strong> based in Nairobi, Kenya, with over 10 years of experience in technical operations and data synthesis. Currently, I am pursuing my <strong>Master of Science in Artificial Intelligence</strong> at the Open University of Kenya (Year 1, Semester 2).</p>
+                    <br>
+                    <p>My work bridges the gap between complex data and actionable insights. Whether it is building predictive models for healthcare or optimizing supply chain logistics through data, I focus on evidence-based problem solving. I am currently seeking opportunities in <strong>Academic Research</strong> and <strong>Data Science</strong>.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Education</h3>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 15px;">
+                            <strong>MSc. Artificial Intelligence</strong><br>
+                            <span style="font-size: 0.9rem; color: #666;">Open University of Kenya (Ongoing)</span>
+                        </li>
+                        <li style="margin-bottom: 15px;">
+                            <strong>BSc. ICT Management</strong><br>
+                            <span style="font-size: 0.9rem; color: #666;">Maseno University (First Class Honours)</span>
+                        </li>
+                        <li>
+                            <strong>Fellowship: Data Science</strong><br>
+                            <span style="font-size: 0.9rem; color: #666;">Women Techsters (2023)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		<!-- Work -->
-			<article id="work" class="wrapper style3">
-				<div class="container">
-					<header>
-						<h2>Data Analytics Projects</h2>
-						<p>This is my most recent work.</p>
-					</header>
-					<div class="row">
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-								<h3>DA1</h3>
-								<p>My first data analytics project.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-								<h3>DA2</h3>
-								<p>My second data analytics project.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-								<h3>DA3</h3>
-								<p>My third data analytics project.</p>
-							</article>
-						</div>
-					</div>
-					<footer>
-						<p>What do I do with machine learning? Click below to continue</p>
-						<a href="#portfolio" class="button large scrolly">   Predict with machine learning models with Python and R</a>
-					</footer>
-						
-				</div>
-			</article>
+    <section id="skills" style="background-color: #eef2f5;">
+        <div class="container">
+            <h2>Research & Technical Skills</h2>
+            <div style="max-width: 800px;">
+                <span class="skill-tag">Python (Pandas, NumPy)</span>
+                <span class="skill-tag">Machine Learning (Scikit-Learn)</span>
+                <span class="skill-tag">SQL & Database Management</span>
+                <span class="skill-tag">Power BI & Tableau</span>
+                <span class="skill-tag">Quantitative Research</span>
+                <span class="skill-tag">Predictive Modeling</span>
+                <span class="skill-tag">Natural Language Processing (NLP)</span>
+                <span class="skill-tag">Technical Reporting</span>
+            </div>
+        </div>
+    </section>
 
-		<!-- Portfolio -->
-			<article id="portfolio" class="wrapper style3">
-				<div class="container">
-					<header>
-						<h2>Machine Learning Projects</h2>
-						<p>Data science meets AI in the cloud.</p>
-					</header>
-					<div class="row">
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-								<h3><a href="#">ML1</a></h3>
-								<p>First ML Project</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-								<h3><a href="#">ML2</a></h3>
-								<p>Second ML Project.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-								<h3><a href="#">ML3</a></h3>
-								<p>Third ML Project.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-								<h3><a href="#">ML4</a></h3>
-								<p>Fourth ML Project.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-							        <h3><a href="#">ML5</a></h3>
-								<p>Fifth ML Project.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
-							        <h3><a href="#">ML6</a></h3>
-								<p>Sixth ML Project.</p>
-							</article>
-						</div>
-					</div>
-					<footer>
-						<p>Interested in my work?</p>
-						<a href="#contact" class="button large scrolly">Get in touch with me</a>
-					</footer>
-				</div>
-			</article>
+    <section id="projects">
+        <div class="container">
+            <h2>Key Projects</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-tech">PYTHON • MACHINE LEARNING • HEALTHCARE</div>
+                        <h3>Heart Failure Prediction Model</h3>
+                        <p>A research-based predictive model utilizing 11 clinical features to assess heart failure risk. Applied Logistic Regression and Decision Tree algorithms to achieve high accuracy for early diagnosis support.</p>
+                        <br>
+                        <a href="https://github.com/belindaopola" target="_blank" style="font-weight: bold;">View Code &rarr;</a>
+                    </div>
+                </div>
 
-		<!-- Contact -->
-			<article id="contact" class="wrapper style4">
-				<div class="container medium">
-					<header>
-						<h2>Have me analyse your data or create models ...</h2>
-						<p>Please write to me and I will do my best to respond to each request.</p>
-					</header>
-					<div class="row">
-						<div class="col-12">
-							<form method="post" action="https://formspree.io/f/mnqkpdge">
-								<div class="row">
-									<div class="col-6 col-12-small">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="text" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="col-12">
-										<input type="text" name="subject" id="subject" placeholder="Subject" />
-									</div>
-									<div class="col-12">
-										<textarea name="message" id="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" /></li>
-											<li><input type="reset" value="Clear Form" class="alt" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</div>
-						<div class="col-12">
-							<hr />
-							<h3>Find me on ...</h3>
-							<ul class="social">
-								<li><a href="https://twitter.com/belindaopola" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="https://www.linkedin.com/in/belindaopola/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://github.com/belindaopola" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<!--
-								<li><a href="#" class="icon solid fa-rss"><span>RSS</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram"><span>Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-foursquare"><span>Foursquare</span></a></li>
-								<li><a href="#" class="icon brands fa-skype"><span>Skype</span></a></li>
-								<li><a href="#" class="icon brands fa-soundcloud"><span>Soundcloud</span></a></li>
-								<li><a href="#" class="icon brands fa-youtube"><span>YouTube</span></a></li>
-								<li><a href="#" class="icon brands fa-blogger"><span>Blogger</span></a></li>
-								<li><a href="#" class="icon brands fa-flickr"><span>Flickr</span></a></li>
-								<li><a href="#" class="icon brands fa-vimeo"><span>Vimeo</span></a></li>
-								-->
-							</ul>
-							<hr />
-						</div>
-					</div>
-					<footer>
-						<ul id="copyright">
-							<li>&copy; Belinda Opola. All rights reserved.</li>
-						</ul>
-					</footer>
-				</div>
-			</article>
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-tech">NLP • AI • CUSTOMER SERVICE</div>
+                        <h3>Project Karty: AI Chatbot</h3>
+                        <p>Designed and deployed an NLP-driven chatbot to automate customer interactions. Focused on intent recognition and reducing human support workload for standard queries.</p>
+                        <br>
+                        <a href="https://github.com/belindaopola" target="_blank" style="font-weight: bold;">View Code &rarr;</a>
+                    </div>
+                </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-tech">POWER BI • DATA ANALYTICS • LOGISTICS</div>
+                        <h3>Logistics Performance Dashboard</h3>
+                        <p>Developed an interactive Power BI dashboard for Symphony Technologies. Aggregated operational data to identify bottlenecks, reducing service delivery delays by 20%.</p>
+                        <br>
+                        <a href="#" style="font-weight: bold;">View Report &rarr;</a>
+                    </div>
+                </div>
 
-	</body>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Belinda Akinyi Opola. All rights reserved.</p>
+            <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 10px;">Built for the Open University of Kenya Application</p>
+        </div>
+    </footer>
+
+</body>
 </html>
